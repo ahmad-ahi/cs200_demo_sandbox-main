@@ -8,10 +8,10 @@ import pytest
 ))
 
 def test_bar(x, y, expected):
-    assert main.foo(x, y) == expected
+    assert main.bar(x, y) == expected
     
 
 def test_bar():
-    assert pytest.approx(main.foo(2, 3)) == 8
-    assert pytest.approx(main.foo(0, 0)) == 2
-    assert pytest.approx(main.foo(-1, 4)) == -2
+    assert pytest.approx(main.bar(2, 3)) == 8
+    assert pytest.approx(main.bar(0, 0)) == 2
+    assert pytest.approx(main.bar(-1, 4)) == -2
